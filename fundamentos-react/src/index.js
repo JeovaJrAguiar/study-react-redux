@@ -1,10 +1,9 @@
 import ReactDOM from 'react-dom'
 import './index.css'
-import Primeiro from './components/basics/Primeiro'
+
+import App from './App'
 
 ReactDOM.render(
-    <div>
-        <Primeiro/>
-    </div>, 
+    <App/>, 
     document.getElementById('root')
 )
