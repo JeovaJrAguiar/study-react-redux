@@ -3,21 +3,20 @@ import Primeiro from './components/basics/Primeiro'
 import WithParameter from './components/basics/WithParameter'
 import Random from "./components/basics/Random";
 import Card from "./components/layout/Card";
-import "./App.css";
+import './App.css';
 import Family from "./components/basics/Family";
 import FamilyMember from "./components/basics/FamilyMember";
 
-export default _ =>
+export default () => (
     <div className="App">
         <h1>React Fundamentals</h1>
+
         <div className="Cards">
             <Card title="#05 - Child Component" color="#FF5733">
                 <Family lastname="Aguiar">
-                    <FamilyMember name="Jeová"/><br />
-                    {/*
-                    <FamilyMember name="Beatriz" /><br />
-                    <FamilyMember name="Marcos" /><br />
-                    */}
+                    <FamilyMember name="Beatriz" />
+                    <FamilyMember name="Marcos" />
+                    <FamilyMember name="Junior" />
                 </Family>
             </Card>
             <Card title="#03 - Random number" color="#581845" >
@@ -33,3 +32,4 @@ export default _ =>
             </Card>
         </div>
     </div>
+)
