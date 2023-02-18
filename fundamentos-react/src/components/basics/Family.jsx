@@ -1,14 +1,15 @@
-import React, { cloneElement } from "react";
+import React, { cloneElement , Children} from "react";
 
 export default (props) => {
-    console.log(props)
     return (
         <div>
+            Aula 26 e 27
             {
-                React.Children.map(props.Children, (child, i )=> {
-                    return cloneElement(child, {...props, key: i})
-                })
-            } 
+                cloneElement(props.children, props)
+                /*props.Children.map((child, i )=> {
+                    cloneElement(child, {...props, key: i})
+                })*/
+            }
         </div>
     );
 };
