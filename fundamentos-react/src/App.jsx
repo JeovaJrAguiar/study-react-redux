@@ -16,7 +16,7 @@ export default () => (
         <h1>React Fundamentals</h1>
 
         <div className="Cards">
-            <Card title="#07 - Product List" color="#FF4C65" >
+            <Card title="#07 - Product List" color="#3A9AD9" >
                 <ProductsTable />
             </Card>
 
