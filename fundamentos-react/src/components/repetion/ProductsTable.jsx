@@ -5,7 +5,7 @@ import './ProductsList.css'
 export default props => {
     const prods = products.map((product, i) => {
         return (
-            <tr className={ i % 2 == 0 ? 'Par' :  ''} key={product.id} >
+            <tr className={ i % 2 === 0 ? 'Par' :  ''} key={product.id} >
                 <td>{product.id}</td>
                 <td>{product.name}</td>
                 <td>R$ {product.price.toFixed(2).replace('.', ',')}</td>
@@ -14,7 +14,7 @@ export default props => {
     })
 
     return (
-        <div className="TabelaProdutos">
+        <div className="TableProducts">
             <table>
                 <thead>
                     <tr>
