@@ -10,12 +10,35 @@ import Family from "./components/basics/Family";
 import FamilyMember from "./components/basics/FamilyMember";
 import StudentList from "./components/repetion/StudentList";
 import ProductsTable from "./components/repetion/ProductsTable";
+import ParOrImpar from "./components/conditional/ParOrImpar";
+import UserInfo from "./components/conditional/UserInfo";
+import DirectFather from "./components/comunication/DirectFather";
+import IndirectFather from "./components/comunication/IndirectFather";
+import Input from "./components/form/Input";
 
 export default () => (
     <div className="App">
         <h1>React Fundamentals</h1>
 
         <div className="Cards">
+            <Card title="#11 - Controlled Component" color="#E45F56" >
+                <Input />
+            </Card>
+
+            <Card title="#10 - Indirect Comunication" color="#8BAD39" >
+                <IndirectFather />
+            </Card>
+
+            <Card title="#09 - Direct Comunication" color="#59323C" >
+                <DirectFather />
+            </Card>
+
+            <Card title="#08 - Conditional Renderazation" color="#982395" >
+                <ParOrImpar number={20} />
+                <UserInfo user={{ name: 'Fernando' }} />
+                <UserInfo user={{ mail: 'fernando@gmail.com' }} />
+            </Card>
+
             <Card title="#07 - Product List" color="#3A9AD9" >
                 <ProductsTable />
             </Card>
@@ -31,7 +54,7 @@ export default () => (
                     <FamilyMember name="Carla" />
                     */}
                 </Family>
-            
+
             </Card>
             <Card title="#03 - Random number" color="#581845" >
                 <Random max={60} min={1} />
