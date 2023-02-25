@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import IndirectChild from "./IndirectChild"
 
- export default props => {
+ export default _ => {
     const [ name, setName ] = useState('?')
     const [ old, setOld ] = useState(0)
     const [ nerd, setNerd ] = useState(false)

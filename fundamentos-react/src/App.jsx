@@ -15,12 +15,23 @@ import UserInfo from "./components/conditional/UserInfo";
 import DirectFather from "./components/comunication/DirectFather";
 import IndirectFather from "./components/comunication/IndirectFather";
 import Input from "./components/form/Input";
+import Counter from "./components/counter/Counter";
+import Mega from "./components/mega/Mega";
+
 
 export default () => (
     <div className="App">
         <h1>React Fundamentals</h1>
 
         <div className="Cards">
+            <Card title="#13 - MEGA" color="#39fca1" >
+                <Mega qtde={7}/>
+            </Card>
+
+            <Card title="#12 - Counter" color="#323232" >
+                <Counter />
+            </Card>
+
             <Card title="#11 - Controlled Component" color="#E45F56" >
                 <Input />
             </Card>
